@@ -1,1 +1,13 @@
-
+spring:
+  kafka:
+    bootstap-servers: localhost:9092
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/se
+    username: root
+    password: 12345678
+  jpa:
+    hibernate:
+      ddl-auto: update
+      database-platform: org.hibernate.dialect.MySQL8Dialect
